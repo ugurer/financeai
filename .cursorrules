@@ -1,0 +1,130 @@
+# AI-Powered Financial Portfolio Management Application
+
+## Project Overview
+- **Project Name**: AI-Powered Financial Portfolio Management Application
+- **Goal**: Develop an intelligent portfolio management system using AI/ML
+- **Target Users**: Individual investors and portfolio management beginners
+
+## Technical Stack
+- **Frontend**: React.js + TypeScript
+- **Backend**: Node.js (Express) + Python (FastAPI)
+- **Data Storage**: PostgreSQL
+- **AI/ML**: Python (scikit-learn, pandas)
+- **APIs**: Financial data providers (Yahoo Finance/Alpha Vantage)
+
+## Project Structure
+```
+financial-portfolio-app/
+├── frontend/                 # React frontend application
+│   ├── src/
+│   │   ├── components/      # Reusable UI components
+│   │   ├── pages/          # Main application pages
+│   │   ├── services/       # API integration services
+│   │   └── utils/          # Helper functions
+├── backend/
+│   ├── node-api/           # Node.js REST API
+│   │   ├── src/
+│   │   │   ├── controllers/
+│   │   │   ├── models/
+│   │   │   └── services/
+│   ├── python-api/         # Python ML service
+│   │   ├── models/         # ML models
+│   │   ├── services/       # Data processing
+│   │   └── utils/          # Helper functions
+└── database/               # Database schemas and migrations
+```
+
+## Development Guidelines for Cursor
+
+### 1. Code Generation Tips
+- Use TypeScript for type safety
+- Implement components one at a time
+- Start with basic functionality, then add features
+- Use async/await for API calls
+- Implement error handling
+
+### 2. Cursor AI Prompts
+For optimal code generation, use these prompt patterns:
+
+```
+// Frontend Components
+"Create a React component for [specific feature] using TypeScript with proper type definitions"
+
+// API Endpoints
+"Create an Express endpoint for [specific functionality] with error handling and validation"
+
+// Database Models
+"Generate a PostgreSQL schema for [specific entity] with proper relationships"
+
+// ML Models
+"Create a Python function for [specific ML task] using scikit-learn"
+```
+
+### 3. Implementation Order
+1. Set up project structure and dependencies
+2. Implement basic frontend components
+3. Create backend API endpoints
+4. Develop ML models
+5. Integrate all components
+6. Add testing and documentation
+
+### 4. Key Features to Implement
+- User authentication system
+- Risk assessment questionnaire
+- Portfolio allocation algorithm
+- Real-time data visualization
+- Investment performance tracking
+- AI-powered investment recommendations
+
+### 5. Testing Strategy
+- Unit tests for components
+- Integration tests for API endpoints
+- ML model validation
+- End-to-end testing
+
+## Code Examples
+
+### Frontend Component (TypeScript)
+```typescript
+interface RiskAssessmentProps {
+onSubmit: (data: RiskProfile) => void;
+}
+
+interface RiskProfile {
+riskLevel: 'low' | 'medium' | 'high';
+investmentDuration: number;
+}
+
+const RiskAssessment: React.FC<RiskAssessmentProps> = ({ onSubmit }) => {
+// Implementation
+};
+```
+
+### Backend API (Node.js)
+```typescript
+interface PortfolioAllocation {
+stocks: number;
+bonds: number;
+cash: number;
+}
+
+const calculatePortfolio = (riskProfile: RiskProfile): PortfolioAllocation => {
+// Implementation
+};
+```
+
+### ML Model (Python)
+```python
+def train_portfolio_model(historical_data: pd.DataFrame) -> Any:
+  """
+  Train ML model for portfolio optimization
+  """
+  # Implementation
+```
+
+## Development Notes
+1. Use Cursor's code completion for boilerplate code
+2. Leverage AI suggestions for optimization
+3. Follow TypeScript best practices
+4. Implement proper error handling
+5. Write comprehensive documentation

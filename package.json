@@ -1,0 +1,19 @@
+{
+  "name": "finance-ai",
+  "version": "1.0.0",
+  "description": "AI-Powered Financial Portfolio Management Application",
+  "scripts": {
+    "install:all": "npm install && cd frontend && npm install && cd ../backend/node-api && npm install && cd ../python-api && pip install -r requirements.txt",
+    "start": "concurrently \"cd frontend && npm start\" \"cd backend/node-api && npm start\" \"cd backend/python-api && python main.py\"",
+    "start:frontend": "cd frontend && npm start",
+    "start:backend": "cd backend/node-api && npm start",
+    "start:ml": "cd backend/python-api && python main.py",
+    "build": "cd frontend && npm run build && cd ../backend/node-api && npm run build",
+    "test": "cd frontend && npm test && cd ../backend/node-api && npm test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
