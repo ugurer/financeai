@@ -1,5 +1,4 @@
-cp .env.example .env
-# .env dosyasını düzenleyin# Finance AI - Türk Borsası Analiz ve Portföy Yönetimi
+#Finance AI - Türk Borsası Analiz ve Portföy Yönetimi
 
 Modern ve kullanıcı dostu bir borsa analiz ve portföy yönetim uygulaması.
 
